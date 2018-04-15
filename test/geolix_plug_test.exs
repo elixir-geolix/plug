@@ -1,7 +1,21 @@
 defmodule Geolix.PlugTest do
   use ExUnit.Case
+  use Plug.Test
 
-  test "the truth" do
-    assert 1 == 1
+  defmodule Router do
+    use Plug.Router
+
+    plug Geolix.Plug
+
+    plug :match
+    plug :dispatch
+
+    get "/", do: send_resp(conn, 200, "OK")
+  end
+
+  @opts Router.init([])
+
+  test "returns 200" do
+    assert 200 == conn(:get, "/") |> Router.call(@opts) |> Map.fetch!(:status)
   end
 end
