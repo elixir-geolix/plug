@@ -34,8 +34,7 @@ defmodule Geolix.Plug.Mixfile do
 
   defp docs do
     [
-      extras: ["CHANGELOG.md", "README.md"],
-      main: "readme",
+      main: "Geolix.Plug",
       source_ref: "master",
       source_url: @url_github
     ]
