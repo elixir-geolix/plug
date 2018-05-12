@@ -5,7 +5,7 @@ defmodule Geolix.PlugTest do
   defmodule Router do
     use Plug.Router
 
-    plug Geolix.Plug, where: :city
+    plug Geolix.Plug, where: :fixture_city
 
     plug :match
     plug :dispatch
@@ -16,9 +16,12 @@ defmodule Geolix.PlugTest do
   @opts Router.init([])
 
   test "returns 200" do
-    conn = conn(:get, "/") |> Router.call(@opts)
+    conn =
+      conn(:get, "/")
+      |> Map.put(:remote_ip, {2, 125, 160, 216})
+      |> Router.call(@opts)
 
     assert 200 == conn.status
-    refute conn.private[:geolix]
+    assert %Geolix.Result.City{} = conn.private[:geolix]
   end
 end
