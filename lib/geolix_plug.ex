@@ -14,4 +14,10 @@ defmodule Geolix.Plug do
 
     put_private(conn, :geolix, lookup)
   end
+
+  @doc """
+  Returns the lookup result from the connection.
+  """
+  @spec get_result(Plug.Conn.t()) :: nil | map
+  def get_result(conn), do: conn.private[:geolix]
 end

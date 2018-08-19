@@ -22,6 +22,6 @@ defmodule Geolix.PlugTest do
       |> Router.call(@opts)
 
     assert 200 == conn.status
-    refute nil == conn.private[:geolix]
+    refute nil == Geolix.Plug.get_result(conn)
   end
 end
