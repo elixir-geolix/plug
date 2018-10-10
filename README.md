@@ -8,7 +8,7 @@ Add both `:geolix_plug` and `:geolix` as dependencies to your `mix.exs` file:
 defp deps do
   [
     # ...
-    {:geolix, "~> 0.16"},
+    {:geolix, "~> 0.17"},
     {:geolix_plug, "~> 0.1"}
     # ...
   ]
