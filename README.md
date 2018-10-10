@@ -19,7 +19,7 @@ end
 
 ### Configuration
 
-Ensure `:geolix` is configured properly. There are no additional confugration
+Ensure `:geolix` is configured properly. There are no additional configuration
 steps necessary.
 
 ### Plug
