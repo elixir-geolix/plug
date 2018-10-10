@@ -15,21 +15,6 @@ defp deps do
 end
 ```
 
-You should also update your applications to include all necessary projects:
-
-```elixir
-def application do
-  [
-    applications: [
-      # ...
-      :geolix,
-      :geolix_plug
-      # ...
-    ]
-  ]
-end
-```
-
 ## Application Setup
 
 ### Configuration
