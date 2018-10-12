@@ -8,7 +8,7 @@ defmodule Geolix.Plug.Mixfile do
       app: :geolix_plug,
       name: "Geolix Plug",
       version: "0.1.0-dev",
-      elixir: "~> 1.3",
+      elixir: "~> 1.5",
       deps: deps(),
       description: "Geolix Plug",
       docs: docs(),
