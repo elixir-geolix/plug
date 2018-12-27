@@ -2,14 +2,13 @@
 
 ## Package Setup
 
-Add both `:geolix_plug` and `:geolix` as dependencies to your `mix.exs` file:
+Add the library as a dependency to your `mix.exs` file:
 
 ```elixir
 defp deps do
   [
     # ...
-    {:geolix, "~> 0.17"},
-    {:geolix_plug, "~> 0.1"}
+    {:geolix_plug, "~> 0.1.0"}
     # ...
   ]
 end
