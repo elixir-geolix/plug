@@ -22,12 +22,6 @@ defmodule Geolix.Plug.Mixfile do
     ]
   end
 
-  def application do
-    [
-      extra_applications: [:plug]
-    ]
-  end
-
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
