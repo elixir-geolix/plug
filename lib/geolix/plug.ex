@@ -27,7 +27,7 @@ defmodule Geolix.Plug do
         get "/" do
           case Geolix.Plug.get_result(conn) do
             nil -> send_resp(404, "No data or lookup failed")
-            lookup -> send_resp(200, "Client country: #{lookup.country.name}")
+            lookup -> send_resp(200, "Client country: " <> lookup.country.name)
           end
         end
       end
