@@ -11,6 +11,7 @@ defmodule Geolix.Plug.Mixfile do
       elixir: "~> 1.5",
       deps: deps(),
       description: "Geolix Plug",
+      dialyzer: dialyzer(),
       docs: docs(),
       package: package(),
       preferred_cli_env: [
@@ -25,11 +26,23 @@ defmodule Geolix.Plug.Mixfile do
   defp deps do
     [
       {:credo, "~> 1.0", only: :dev, runtime: false},
+      {:dialyxir, "~> 1.0.0-rc", only: :dev, runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:excoveralls, "~> 0.10", only: :test},
       {:geolix, "~> 0.17"},
       {:geolix_testdata, "~> 0.3.0", only: :test},
       {:plug, "~> 1.0"}
+    ]
+  end
+
+  defp dialyzer do
+    [
+      flags: [
+        :error_handling,
+        :race_conditions,
+        :underspecs,
+        :unmatched_returns
+      ]
     ]
   end
 
