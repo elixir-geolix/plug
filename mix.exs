@@ -30,7 +30,7 @@ defmodule Geolix.Plug.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:excoveralls, "~> 0.10", only: :test},
       {:geolix, "~> 0.17"},
-      {:geolix_testdata, "~> 0.3.0", only: :test},
+      {:geolix_testdata, "~> 0.4.0", only: :test},
       {:plug, "~> 1.0"}
     ]
   end
