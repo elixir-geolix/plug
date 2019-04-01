@@ -5,7 +5,7 @@ defmodule Geolix.PlugTest do
   defmodule Router do
     use Plug.Router
 
-    plug Geolix.Plug, where: :testdata
+    plug Geolix.Plug, where: :fake
 
     plug :match
     plug :dispatch
@@ -22,6 +22,6 @@ defmodule Geolix.PlugTest do
       |> Router.call(@opts)
 
     assert 200 == conn.status
-    refute nil == Geolix.Plug.get_result(conn)
+    assert :fake == Geolix.Plug.get_result(conn)
   end
 end

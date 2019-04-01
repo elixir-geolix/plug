@@ -2,9 +2,9 @@
 
 databases = [
   %{
-    id: :testdata,
-    adapter: Geolix.Adapter.MMDB2,
-    source: Path.join([Geolix.TestData.dir(:mmdb2), "Geolix.mmdb"])
+    id: :fake,
+    adapter: Geolix.Adapter.Fake,
+    data: Map.put(%{}, {1, 1, 1, 1}, :fake)
   }
 ]
 
