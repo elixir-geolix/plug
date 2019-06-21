@@ -1,4 +1,4 @@
-defmodule Geolix.Plug.Mixfile do
+defmodule Geolix.Plug.MixProject do
   use Mix.Project
 
   @url_github "https://github.com/elixir-geolix/plug"
