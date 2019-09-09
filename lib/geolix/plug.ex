@@ -18,7 +18,7 @@ defmodule Geolix.Plug do
       end
 
   Depending on how you are using plugs the actual location may vary.
-  Please consult your frameworks documentation to find the proper place.
+  Please consult your framework's documentation to find the proper place.
 
   Once setup the connection will be automatically enriched with the results of
   a lookup based on the connections `:remote_ip`:
