@@ -7,7 +7,7 @@ defmodule Geolix.Plug.MixProject do
     [
       app: :geolix_plug,
       name: "Geolix Plug",
-      version: "0.1.0-dev",
+      version: "0.1.0",
       elixir: "~> 1.5",
       deps: deps(),
       description: "Geolix Plug",
@@ -48,7 +48,7 @@ defmodule Geolix.Plug.MixProject do
   defp docs do
     [
       main: "Geolix.Plug",
-      source_ref: "master",
+      source_ref: "v0.1.0",
       source_url: @url_github
     ]
   end
