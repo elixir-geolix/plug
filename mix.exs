@@ -29,7 +29,7 @@ defmodule Geolix.Plug.MixProject do
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.12.0", only: :test},
-      {:geolix, "~> 1.0"},
+      {:geolix, "~> 1.1"},
       {:plug, "~> 1.0"}
     ]
   end
