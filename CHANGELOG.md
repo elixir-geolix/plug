@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.2.0-dev
+## v0.2.0 (2020-11-07)
 
 - Backwards incompatible changes
     - `:geolix` has been updated to `~> 2.0`
