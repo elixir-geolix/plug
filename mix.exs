@@ -16,8 +16,7 @@ defmodule Geolix.Plug.MixProject do
       package: package(),
       preferred_cli_env: [
         coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.travis": :test
+        "coveralls.detail": :test
       ],
       test_coverage: [tool: ExCoveralls]
     ]
@@ -41,7 +40,9 @@ defmodule Geolix.Plug.MixProject do
         :race_conditions,
         :underspecs,
         :unmatched_returns
-      ]
+      ],
+      plt_core_path: "plts",
+      plt_file: {:no_warn, "plts/dialyzer.plt"}
     ]
   end
 
