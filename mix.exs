@@ -9,7 +9,7 @@ defmodule Geolix.Plug.MixProject do
       app: :geolix_plug,
       name: "Geolix Plug",
       version: @version,
-      elixir: "~> 1.7",
+      elixir: "~> 1.9",
       deps: deps(),
       description: "Geolix Plug",
       dialyzer: dialyzer(),
